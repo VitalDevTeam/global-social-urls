@@ -2,7 +2,7 @@
 /*
 Plugin Name: Global Social Network Profile URLs
 Plugin URI: https://github.com/VitalDevTeam/global-social-urls
-Description: Creates admin page in Dashboard menu for managing social profile URLs. Call URLs via global variable in your templates. Example: echo TWITTER_URL;
+Description: Creates admin page in Settings menu for managing social profile URLs. Call URLs via global variable in your templates. Example: echo TWITTER_URL;
 Version: 1.0
 Author: Vital Dev Team
 Author URI: http://vtldesign.com
@@ -28,7 +28,7 @@ if ( is_admin() ) :
 
     // Add theme options page to the admin menu
     function vtl_social_settings_options() {
-        add_theme_page(
+        add_options_page(
             'Social',
             'Social',
             'edit_theme_options',
