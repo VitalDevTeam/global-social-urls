@@ -109,6 +109,12 @@ if ( is_admin() ) :
         $social_urls = get_option( 'vtl_social_settings', $vtl_social_settings );
 
         $input['twitter_url'] = wp_filter_nohtml_kses( $input['twitter_url'] );
+        $input['facebook_url'] = wp_filter_nohtml_kses( $input['facebook_url'] );
+        $input['google_url'] = wp_filter_nohtml_kses( $input['google_url'] );
+        $input['youtube_url'] = wp_filter_nohtml_kses( $input['youtube_url'] );
+        $input['linkedin_url'] = wp_filter_nohtml_kses( $input['linkedin_url'] );
+        $input['instagram_url'] = wp_filter_nohtml_kses( $input['instagram_url'] );
+        $input['pinterest_url'] = wp_filter_nohtml_kses( $input['pinterest_url'] );
 
         return $input;
     }
@@ -122,10 +128,44 @@ endif;  // EndIf is_admin()
 global $vtl_social_settings;
 $social_urls = get_option( 'vtl_social_settings', $vtl_social_settings );
 
-define('TWITTER_URL', 'http://' . $social_urls['twitter_url']);
-define('FACEBOOK_URL', 'http://' . $social_urls['facebook_url']);
-define('GOOGLE_URL', 'http://' . $social_urls['google_url']);
-define('YOUTUBE_URL', 'http://' . $social_urls['youtube_url']);
-define('LINKEDIN_URL', 'http://' . $social_urls['linkedin_url']);
-define('INSTAGRAM_URL', 'http://' . $social_urls['instagram_url']);
-define('PINTEREST_URL', 'http://' . $social_urls['pinterest_url']);
+if ( empty($social_urls['twitter_url']) ) {
+    define('TWITTER_URL', 'http://twitter.com');
+} else {
+    define('TWITTER_URL', 'http://' . $social_urls['twitter_url']);
+}
+
+if ( empty($social_urls['facebook_url']) ) {
+    define('FACEBOOK_URL', 'http://facebook.com');
+} else {
+    define('FACEBOOK_URL', 'http://' . $social_urls['facebook_url']);
+}
+
+if ( empty($social_urls['google_url']) ) {
+    define('GOOGLE_URL', 'http://plus.google.com');
+} else {
+    define('GOOGLE_URL', 'http://' . $social_urls['google_url']);
+}
+
+if ( empty($social_urls['youtube_url']) ) {
+    define('YOUTUBE_URL', 'http://youtube.com');
+} else {
+    define('YOUTUBE_URL', 'http://' . $social_urls['youtube_url']);
+}
+
+if ( empty($social_urls['linkedin_url']) ) {
+    define('LINKEDIN_URL', 'http://linkedin.com');
+} else {
+    define('LINKEDIN_URL', 'http://' . $social_urls['linkedin_url']);
+}
+
+if ( empty($social_urls['instagram_url']) ) {
+    define('INSTAGRAM_URL', 'http://instagram.com');
+} else {
+    define('INSTAGRAM_URL', 'http://' . $social_urls['instagram_url']);
+}
+
+if ( empty($social_urls['pinterest_url']) ) {
+    define('PINTEREST_URL', 'http://pinterest.com');
+} else {
+    define('PINTEREST_URL', 'http://' . $social_urls['pinterest_url']);
+}
