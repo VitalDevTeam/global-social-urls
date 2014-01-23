@@ -80,6 +80,10 @@ if ( is_admin() ) :
                         <td><code>http://</code><input id="youtube_url" name="vtl_social_settings[youtube_url]" type="text" value="<?php esc_attr_e($social_urls['youtube_url']); ?>" class="regular-text" placeholder="youtube.com/user/username" /></td>
                     </tr>
                     <tr valign="top">
+                        <th scope="row"><label for="vimeo_url">Vimeo</label></th>
+                        <td><code>http://</code><input id="vimeo_url" name="vtl_social_settings[vimeo_url]" type="text" value="<?php esc_attr_e($social_urls['vimeo_url']); ?>" class="regular-text" placeholder="vimeo.com/username" /></td>
+                    </tr>
+                    <tr valign="top">
                         <th scope="row"><label for="linkedin_url">LinkedIn</label></th>
                         <td><code>http://</code><input id="linkedin_url" name="vtl_social_settings[linkedin_url]" type="text" value="<?php esc_attr_e($social_urls['linkedin_url']); ?>" class="regular-text" placeholder="linkedin.com/company/username" /></td>
                     </tr>
@@ -112,6 +116,7 @@ if ( is_admin() ) :
         $input['facebook_url'] = wp_filter_nohtml_kses( $input['facebook_url'] );
         $input['google_url'] = wp_filter_nohtml_kses( $input['google_url'] );
         $input['youtube_url'] = wp_filter_nohtml_kses( $input['youtube_url'] );
+        $input['vimeo_url'] = wp_filter_nohtml_kses( $input['vimeo_url'] );
         $input['linkedin_url'] = wp_filter_nohtml_kses( $input['linkedin_url'] );
         $input['instagram_url'] = wp_filter_nohtml_kses( $input['instagram_url'] );
         $input['pinterest_url'] = wp_filter_nohtml_kses( $input['pinterest_url'] );
@@ -150,6 +155,12 @@ if ( empty($social_urls['youtube_url']) ) {
     define('YOUTUBE_URL', 'http://youtube.com');
 } else {
     define('YOUTUBE_URL', 'http://' . $social_urls['youtube_url']);
+}
+
+if ( empty($social_urls['vimeo_url']) ) {
+    define('VIMEO_URL', 'http://vimeo.com');
+} else {
+    define('VIMEO_URL', 'http://' . $social_urls['vimeo_url']);
 }
 
 if ( empty($social_urls['linkedin_url']) ) {
