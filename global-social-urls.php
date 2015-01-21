@@ -132,6 +132,15 @@ if ( is_admin() ) :
         return $input;
     }
 
+    // Add settings link to installed plugins page
+    function vtl_social_action_links ( $links ) {
+        $custom_links = array(
+                         '<a href="' . admin_url( 'options-general.php?page=social_settings' ) . '">Settings</a>',
+                         );
+        return array_merge( $custom_links, $links );
+    }
+    add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), 'vtl_social_action_links' );
+
 endif;  // EndIf is_admin()
 
 
