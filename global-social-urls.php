@@ -2,7 +2,7 @@
 /*
 Plugin Name: Global Social Network Profile URLs
 Plugin URI: https://github.com/VitalDevTeam/global-social-urls
-Description: Creates admin page in Settings menu for managing social profile URLs. Call URLs via global variable in your templates. Example: echo TWITTER_URL;
+Description: Creates admin page in Settings menu for managing social profile URLs.
 Version: 1.0
 Author: Vital Dev Team
 Author URI: http://vtldesign.com
