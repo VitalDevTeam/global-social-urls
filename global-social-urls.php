@@ -65,35 +65,43 @@ if ( is_admin() ) :
 
                     <tr valign="top">
                         <th scope="row"><label for="twitter_url">Twitter</label></th>
-                        <td><code>http://</code><input id="twitter_url" name="vtl_social_settings[twitter_url]" type="text" value="<?php esc_attr_e($social_urls['twitter_url']); ?>" class="regular-text" placeholder="twitter.com/username" /></td>
+                        <td style="width: 440px;"><code>https://</code><input id="twitter_url" name="vtl_social_settings[twitter_url]" type="text" value="<?php esc_attr_e($social_urls['twitter_url']); ?>" class="regular-text" placeholder="twitter.com/username" /></td>
+                        <td><code>&lt;?php echo TWITTER_URL; ?></code></td>
                     </tr>
                     <tr valign="top">
                         <th scope="row"><label for="facebook_url">Facebook</label></th>
-                        <td><code>http://</code><input id="facebook_url" name="vtl_social_settings[facebook_url]" type="text" value="<?php esc_attr_e($social_urls['facebook_url']); ?>" class="regular-text" placeholder="facebook.com/username" /></td>
+                        <td style="width: 440px;"><code>https://</code><input id="facebook_url" name="vtl_social_settings[facebook_url]" type="text" value="<?php esc_attr_e($social_urls['facebook_url']); ?>" class="regular-text" placeholder="facebook.com/username" /></td>
+                        <td><code>&lt;?php echo FACEBOOK_URL; ?></code></td>
                     </tr>
                     <tr valign="top">
                         <th scope="row"><label for="google_url">Google+</label></th>
-                        <td><code>http://</code><input id="google_url" name="vtl_social_settings[google_url]" type="text" value="<?php esc_attr_e($social_urls['google_url']); ?>" class="regular-text" placeholder="plus.google.com/11001001" /></td>
+                        <td style="width: 440px;"><code>https://</code><input id="google_url" name="vtl_social_settings[google_url]" type="text" value="<?php esc_attr_e($social_urls['google_url']); ?>" class="regular-text" placeholder="plus.google.com/11001001" /></td>
+                        <td><code>&lt;?php echo GOOGLE_URL; ?></code></td>
                     </tr>
                     <tr valign="top">
                         <th scope="row"><label for="youtube_url">YouTube</label></th>
-                        <td><code>http://</code><input id="youtube_url" name="vtl_social_settings[youtube_url]" type="text" value="<?php esc_attr_e($social_urls['youtube_url']); ?>" class="regular-text" placeholder="youtube.com/user/username" /></td>
+                        <td style="width: 440px;"><code>https://</code><input id="youtube_url" name="vtl_social_settings[youtube_url]" type="text" value="<?php esc_attr_e($social_urls['youtube_url']); ?>" class="regular-text" placeholder="youtube.com/user/username" /></td>
+                        <td><code>&lt;?php echo YOUTUBE_URL; ?></code></td>
                     </tr>
                     <tr valign="top">
                         <th scope="row"><label for="vimeo_url">Vimeo</label></th>
-                        <td><code>http://</code><input id="vimeo_url" name="vtl_social_settings[vimeo_url]" type="text" value="<?php esc_attr_e($social_urls['vimeo_url']); ?>" class="regular-text" placeholder="vimeo.com/username" /></td>
+                        <td style="width: 440px;"><code>https://</code><input id="vimeo_url" name="vtl_social_settings[vimeo_url]" type="text" value="<?php esc_attr_e($social_urls['vimeo_url']); ?>" class="regular-text" placeholder="vimeo.com/username" /></td>
+                        <td><code>&lt;?php echo VIMEO_URL; ?></code></td>
                     </tr>
                     <tr valign="top">
                         <th scope="row"><label for="linkedin_url">LinkedIn</label></th>
-                        <td><code>http://</code><input id="linkedin_url" name="vtl_social_settings[linkedin_url]" type="text" value="<?php esc_attr_e($social_urls['linkedin_url']); ?>" class="regular-text" placeholder="linkedin.com/company/username" /></td>
+                        <td style="width: 440px;"><code>https://</code><input id="linkedin_url" name="vtl_social_settings[linkedin_url]" type="text" value="<?php esc_attr_e($social_urls['linkedin_url']); ?>" class="regular-text" placeholder="linkedin.com/company/username" /></td>
+                        <td><code>&lt;?php echo LINKEDIN_URL; ?></code></td>
                     </tr>
                     <tr valign="top">
                         <th scope="row"><label for="instagram_url">Instagram</label></th>
-                        <td><code>http://</code><input id="instagram_url" name="vtl_social_settings[instagram_url]" type="text" value="<?php esc_attr_e($social_urls['instagram_url']); ?>" class="regular-text" placeholder="instagram.com/username" /></td>
+                        <td style="width: 440px;"><code>https://</code><input id="instagram_url" name="vtl_social_settings[instagram_url]" type="text" value="<?php esc_attr_e($social_urls['instagram_url']); ?>" class="regular-text" placeholder="instagram.com/username" /></td>
+                        <td><code>&lt;?php echo INSTAGRAM_URL; ?></code></td>
                     </tr>
                     <tr valign="top">
                         <th scope="row"><label for="pinterest_url">Pinterest</label></th>
-                        <td><code>http://</code><input id="pinterest_url" name="vtl_social_settings[pinterest_url]" type="text" value="<?php esc_attr_e($social_urls['pinterest_url']); ?>" class="regular-text" placeholder="pinterest.com/username" /></td>
+                        <td style="width: 440px;"><code>https://</code><input id="pinterest_url" name="vtl_social_settings[pinterest_url]" type="text" value="<?php esc_attr_e($social_urls['pinterest_url']); ?>" class="regular-text" placeholder="pinterest.com/username" /></td>
+                        <td><code>&lt;?php echo PINTEREST_URL; ?></code></td>
                     </tr>
                 </table>
 
