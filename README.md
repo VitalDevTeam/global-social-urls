@@ -1,4 +1,6 @@
-global-social-urls
+Social Network Profile
 ==================
 
-Creates admin page in WordPress Dashboard menu for managing social profile URLs. Use them by echoing the constant. Example: `<?php echo TWITTER_URL; ?>`
+WordPress plugin for central management of your website's social network profiles.
+
+![wp-admin screenshot](http://i.imgur.com/JQVPpkJ.png)
